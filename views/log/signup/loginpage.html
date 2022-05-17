@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>나만의 향수</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+              }
+            h1 {
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            p {
+                margin-top: 10px;
+                font-size: 20px;
+                line-height: 20px;
+                color: #808893;
+                text-align: center;
+            }
+            p1{
+                font-size: 15px;
+                margin-top: 10px;
+                color: #808893;
+            }
+            hr {
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>가입을 시작합니다!</h1>
+        <p>간단한 가입으로 나만의 향수를 찾을 수 있어요</p>
+        <div class="join-contents">
+            <div class="artc-join-form">
+                <table class="tbl-join">
+                    <caption>
+                        <span class="visually-hidden">회원가입 양식</span>
+                    </caption>
+                    <colgroup>
+                        <col style="width: 24.3902%;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                            아이디
+                            <sup class="essential">필수</sup>
+                            </th>
+                            <td>
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="아이디 입력"
+                                    aria-label="아이디" autocomplete="off" autocapitalize="off"
+                                    maxlength="20">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                이메일
+                                <sup class="essential">필수</sup>
+                            </th>
+                            <td>
+                                <div class="input-wrap">
+                                    <input type="email" placeholder="이메일 입력" aria-label="이메일"
+                                    autocomplete="auto" maxlength="40">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                휴대폰 번호
+                                <sup class="essential">필수</sup>
+                            </th>
+                            <td>
+                                <div class="certification-area">
+                                    <div class="flex-form">
+                                        <div class="flex-input-area phone-area">
+                                            <div class="input-wrap">
+                                                <input type="tel" maxlength="3" aria-label="휴대폰 첫번째 자리" placeholder="010"
+                                                autocomplete="off">
+                                            </div>
+                                            <div class="input-wrap">
+                                              <input type="tel" maxlength="4" aria-label="휴대폰 두번째 자리"
+                                              placeholder="0000" autocomplete="off">      
+                                            </div>
+                                            <div class="input-wrap">
+                                                <input type="tel" maxlength="4" aria-label="휴대폰 세번째 자리"
+                                                placeholder="0000" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="flex-btn-area">
+                                            <button type="button" class="btn btn-out line-black">인증요청</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                생년월일
+                            </th>
+                            <td>
+                                <div class="certification-area">
+                                    <div class="flex-form">
+                                        <div class="flex-input-area phone-area">
+                                            <div class="input-wrap">
+                                                <input type="tel" maxlength="4" aria-label="생년월일"  placeholder="년도"
+                                                autocomplete="off">
+                                            </div>
+                                            <div class="input-wrap">
+                                              <input type="tel" maxlength="2" aria-label="월"  placeholder="월"
+                                                autocomplete="off">      
+                                            </div>
+                                            <div class="input-wrap">
+                                                <input type="tel" maxlength="2" aria-label="일"  placeholder="일"
+                                                 autocomplete="off">
+                                            </div>
+                                            <p1>생년월일을 입력해주시면 <b>회원가입</b> 쿠폰이 지급됩니다.</p1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                      <tr>
+                          <th scope="row">추천인 코드</th>
+                          <td>
+                              <div class="input-wrap">
+                                  <input type="tel" placeholder="추천인 코드 입력 (선택)" aria-label="추천인 코드 입력 (선택)"
+                                  autocomplete="off" maxlength="8">
+                              </div>
+                              <p1>추천인 코드를 입력하시면, 친구초대 포인트가 지급됩니다.</p1>
+                          </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="artc-terms">
+                <div class="term-box">
+                    <div class="agree-all-area">
+                        <div class="lb-chk">
+                            <label>
+                                <input type="checkbox" id="agree_all">
+                                <span>약관 모두 동의</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="agree-area">
+                        <div class="chk-wrap">
+                            ::before
+                            <div class="lb-chk">
+                                <label>
+                                    <input type="checkbox" id="agree_4">
+                                    <span>이벤트/마케팅 수신 동의 (선택)</span>
+                                </label>
+                            </div>
+                            <a href="/event-marketing-policy" target="_blank" class="agree-more">내용보기</a>
+                            ::after
+                        </div>
+                        <div class="chk-wrap">
+                            ::before
+                            <div class="lb-chk">
+                                <label>
+                                    <input type="checkbox" id="agree_5">
+                                    <span>야간 혜택 알림 수신 동의 (선택)</span>
+                                </label>
+                            </div>
+                            <a href="/night-benefit-notice-policy" target="_blank" class="agree-more">내용보기</a>
+                            ::after
+                        </div>
+                        <div class="btn-area">
+                            <button type="button" class="btn btn-primary">가입하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

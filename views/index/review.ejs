@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <style>
+    h1{
+    	text-align: left;
+    	font-size: 50px;
+    	padding: 20px;
+    }
+    table{
+      margin-left: 35px;
+      margin-bottom: 20px;
+    }
+    td{
+    	border-bottom: 1px solid gray;
+    	padding: 10px;
+    	text-align: center;
+    	color: gray;
+    }
+    .search{
+    	font-size: 15px;
+    	color: gray;
+    	padding: 10px;
+    	width: 250px;
+      margin-left: 35px;
+    }
+    .search_btn{
+    	font-size: 20px;
+    	background-color: #000000;
+    	color: white;
+    	width: 150px;
+    	height: 40px;
+    	border-color: black;
+    }
+    .pr_btn{
+    	font-size: 20px;
+    	background-color: #000000;
+    	color: white;
+    	width: 220px;
+    	height: 40px;
+    	margin-left: 600px;
+    	border-color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <%- include('header.html') %>
+
+    	<h1>Review</h1>
+    	<table>
+    		<colgroup>
+    			<col span="5" style="width:250px;">
+    		</colgroup>
+    		<thead>
+    		<tr>
+    			<td>NO.</td>
+    			<td>Product</td>
+    			<td>Subject</td>
+    			<td>Writer</td>
+    			<td>Date</td>
+    		</tr>
+
+    		<tr>
+    			<td>1</td>
+    			<td>Blooming Scents set</td>
+    			<td>라일락 맡아보고 깜짝 놀랐어요</td>
+    			<td>김지연</td>
+    			<td>2021.04.17</td>
+    		</tr>
+
+    		<tr>
+    			<td>2</td>
+    			<td>Orange greenwood</td>
+    			<td>선물하였는데 마음에 들어해요!</td>
+    			<td>Alice</td>
+    			<td>2021.04.22</td>
+    		</tr>
+
+    		</thead>
+    		</table>
+        <form>
+          <input type="text" name="search" class="search">
+          <input type="submit" value="SEARCH" class="search_btn">
+          <input type="submit" value="POST REVIEW" class="pr_btn">
+        </form>
+
+        <%- include('footer.html') %>
+
+</div>
+</body>
+</html>

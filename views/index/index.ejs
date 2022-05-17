@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmant</title>
+
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet"  type="text/css" href="/css/index.css"> -->
+    <link href="flexslider.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet"  type="text/css" href="flexslider.css"> -->
+
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src ="../js/jquery.flexslider.js"></script>
+    <!-- <script src ="../js/jquery.flexslider.js"></script> -->
+    
+</head>
+<body>
+    <div class="container">
+
+        <%- include('header.html') %>
+    <section>
+        <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <a href ="#a" class="main_slide_1">
+                    <img src="../images/Main_slide.jpg">
+                    <p><span>Find Your Own Scent </span></p>
+                </a>
+              </li>
+
+              <li>
+                <a href ="#a" class="main_slide_2">
+                    <img src="../images/slide2.jpg">
+                
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+    </section>
+
+
+    <%- include('footer.html') %>
+
+    
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <style>
+    h1{
+      text-align: left;
+      font-size: 50px;
+      padding: 20px;
+    }
+    h2{
+      text-align: right;
+      font-size: 17px;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-right: 500px;
+      color: gray;
+    }
+
+    table{
+      margin-left: 35px;
+      margin-bottom: 20px;
+    }
+    td{
+      border-bottom: 1px solid gray;
+      padding: 20px;
+      text-align: center;
+      color: gray;
+    }
+    .order_btn{
+      font-size: 23px;
+      background-color: #000000;
+      color: white;
+      width: 145px;
+      height: 50px;
+      border-color: black;
+      margin-left: 1200px;
+      margin-top: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+      <%- include('header.html') %>
+
+    <h1>장바구니</h1>
+    <table>
+      <colgroup>
+        <col span="5" style="width:280px;">
+      </colgroup>
+      <thead>
+      <tr>
+        <td>상품정보</td>
+        <td>상품명</td>
+        <td>수량</td>
+        <td>가격</td>
+        <td>배송비</td>
+      </tr>
+    </thead>
+    </table>
+  <br>
+  <br>
+  <br>
+
+      <h2>상품합계<br>배송비</h2>
+
+      <h2>총 합계</h2>
+
+      <form>
+        <input type="submit" value="주문하기" class="order_btn">
+      </form>
+
+      <%- include('footer.html') %>
+</div>
+</body>
+</html>

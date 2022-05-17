@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"><title>Charmant</title>
+    </head>
+    <body>
+        <div class="box">
+            <div class="form">
+                <div class="button-form">
+                    <!-- <div id="button1">
+                    <button class="toggleButton" onclick="toggleRegister()">
+                        <strong>LOGIN</strong></button></div> -->
+                        <div id="button2">
+                    <button class="toggleButton" >
+                    <strong>Register</strong></button></div>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="imgs/kakao.png" alt="kakao"></a>
+                    <a href="#"><img src="imgs/insta.png" alt="instagram"></a>
+                    <a href="#"><img src="imgs/apple.png" alt="apple"></a>
+                </div>
+                <form id="register" action="/joinadd" class="input-group"  method="POST">
+                    <input type="text" class="input-field" placeholder="Your Name" name = "name">
+                    <input type="text" class="input-field" placeholder="Your Email" name = "id">
+                    <input type="password" class="input-field" placeholder="Your password" name = "pw">
+                    <input type="checkbox" class="checkbox"><span>Remember Conditions</span>
+                    <button class="submit"><strong>회원가입</strong></button>
+                </form>
+                <form id="login" action="" class="input-group">
+                    <!-- <input type="text" class="input-field" placeholder="Your Email">
+                    <input type="password" class="input-field" placeholder="Your password">
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button class="submit"><strong>로그인</strong></button> -->
+                </form> 
+                
+            </div>
+        </div>
+        <script type="text/javascript">
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("button");
+
+        function toggleLogin(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+
+
+        }
+        function toggleRegister(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110";
+
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmant</title>
+
+    <link rel="stylesheet" href="index.css">
+    <style type="text/css">
+    section .main_brand{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        gap: 2em;
+        
+    }
+    section img {
+        display: block;
+        margin: 0 auto;
+    }
+    </style>
+
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <%- include('header.html') %>
+
+    <section>
+        <div class="main_brand">
+            <div class="brand_text">
+                <b><p style="font-size: 1.5rem; text-align: center; font-family: fantasy;">당신만의 향을 찾으세요</p></b><br>
+                <p style="font-size: 1rem; text-align: center; font-family: fantasy;">수많은 향속에서 당신을 위한 <br>
+                    당신의 마음이 이끄는 향수를 찾고자 하는 마음으로 <br>
+                    당신의 삶이 행복한 향으로 나아가기를 바라는 Charmant입니다.
+                </p><br>
+                <img src="../images/Charmant180.png" >
+
+            </div>
+            <div class="brand_image">
+                <img src="../images/brand.png">
+            </div>
+        </div>
+
+    </section>
+
+
+    <%- include('footer.html') %>
+    
+
+    
+</div>
+
+
+</body>
+</html>

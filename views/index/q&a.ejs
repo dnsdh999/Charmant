@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <style>
+    h1{
+    	text-align: left;
+    	font-size: 50px;
+    	padding: 20px;
+    }
+    table{
+      margin-left: 35px;
+      margin-bottom: 20px;
+    }
+    td{
+    	border-bottom: 1px solid gray;
+    	padding: 20px;
+    	text-align: center;
+    	color: gray;
+    }
+    .search{
+    	font-size: 15px;
+    	color: gray;
+    	padding: 10px;
+    	width: 250px;
+      margin-left: 35px;
+    }
+    .search_btn{
+    	font-size: 20px;
+    	background-color: #000000;
+    	color: white;
+    	width: 150px;
+    	height: 40px;
+    	border-color: black;
+    }
+    .post_btn{
+    	font-size: 20px;
+    	background-color: #000000;
+    	color: white;
+    	width: 100px;
+    	height: 40px;
+    	margin-left: 560px;
+    	border-color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+      <%- include('header.html') %>
+
+    	<h1>Q&A</h1>
+    	<table>
+    		<colgroup>
+    			<col span="4" style="width:280px;">
+    		</colgroup>
+    		<thead>
+    		<tr>
+    			<td>NO.</td>
+          <td>Subject</td>
+    			<td>Writer</td>
+    			<td>Date</td>
+    		</tr>
+
+    		<tr>
+    			<td>1</td>
+    			<td>향수 추천 해주세요~!</td>
+    			<td>이수현</td>
+    			<td>2021.03.09</td>
+    		</tr>
+
+    		<tr>
+    			<td>2</td>
+    			<td>배송 문의</td>
+    			<td>sujinkim</td>
+    			<td>2021.04.01</td>
+    		</tr>
+
+        <tr>
+          <td>3</td>
+          <td>로그인이 안돼요ㅠ</td>
+          <td>KOBin</td>
+          <td>2021.04.03</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>선물 포장 문의</td>
+          <td>김민지2</td>
+          <td>2021.04.22</td>
+        </tr>
+
+    		</thead>
+    		</table>
+        <form>
+          <input type="text" name="search" class="search">
+          <input type="submit" value="SEARCH" class="search_btn">
+          <input type="submit" value="POST" class="post_btn">
+        </form>
+
+        <%- include('footer.html') %>
+
+</div>
+</body>
+</html>

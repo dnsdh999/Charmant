@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmant</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+     -->
+
+</head>
+<body>
+    <div class="container">
+        <%- include('header.html') %>
+    <section>
+
+        
+      <!-- <% for(var i =0; i < posts.length; i++){   %>
+        <h4>할일 제목 : <%= posts[i].제목  %></h4>
+        <p>할일 마감날짜 : <%= posts[i].날짜  %></p>
+        <button>삭제</button>
+        <% }   %> -->
+    
+        <!-- <h4 class = "ml-2 my-3 text-center">서버에서 가져온 향수 리스트</h4> -->
+
+        <div class = "shop_list">
+            <!-- <ul class="list-group"> -->
+          <% for (var i = 0; i < posts.length; i++){ %>
+          <!-- <li class="list-group-item"> -->
+            <div class ="shop_list_<%= i+1 %>">
+                <!-- <a href = "/detail/<%= posts[i]._id %>"> -->
+                <img src="../images/350sample.jpg">
+            <!-- <p><h5>글번호 : <%= i %></h5></p> -->
+            <p class="perfume_name"><h4> <span>제품명 : <%= posts[i].제품명 %></span> </h4>
+            <span> 가격 : <%= posts[i].가격 %> </span></p>
+            <!-- <a href = "/edit/<%= posts[i]._id %>"><button type="button" class="btn btn-primary">수정</button></a>
+            <button class="btn btn-danger delete" data-id="<%= posts[i]._id %>">삭제</button> -->
+          <!-- </li> -->
+        <!-- </a> -->
+        </div>
+          <% } %>
+          
+          </div>
+        <!-- </ul> -->
+
+      </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        
+       <!-- <div class="shop_list">
+           <div class ="shop_list_1">
+            <a href ="#a">
+                <img src="../images/350sample.jpg">
+                <p class="perfume_name"><span>상품명</span></p>
+                <p class="perfume_price"><span>상품가격 </span></p>
+            </a>
+           </div>
+
+           <div class ="shop_list_2">
+            <a href ="#a">
+                <img src="../images/350sample.jpg">
+                <p class="perfume_name"><span>상품명</span></p>
+                <p class="perfume_price"><span>상품가격 </span></p>
+            </a>
+           </div>
+
+           <div class ="shop_list_3">
+            <a href ="#a">
+                <img src="../images/350sample.jpg">
+                <p class="perfume_name"><span>상품명</span></p>
+                <p class="perfume_price"><span>상품가격 </span></p>
+            </a>
+           </div>
+
+           <div class ="shop_list_4">
+            <a href ="#a">
+                <img src="../images/350sample.jpg">
+                <p class="perfume_name"><span>상품명</span></p>
+                <p class="perfume_price"><span>상품가격 </span></p>
+            </a>
+           </div>
+
+           <div class ="shop_list_5">
+            <a href ="#a">
+                <img src="../images/350sample.jpg">
+                <p class="perfume_name"><span>상품명</span></p>
+                <p class="perfume_price"><span>상품가격 </span></p>
+            </a>
+           </div>
+
+           <div class ="shop_list_6">
+            <a href ="#a">
+                <img src="../images/350sample.jpg">
+                <p class="perfume_name"><span>상품명</span></p>
+                <p class="perfume_price"><span>상품가격 </span></p>
+            </a>
+           </div>
+
+           <div class ="shop_list_7">
+            <a href ="#a">
+                <img src="../images/350sample.jpg">
+                <p class="perfume_name"><span>상품명</span></p>
+                <p class="perfume_price"><span>상품가격 </span></p>
+            </a>
+           </div>
+
+       </div> -->
+
+    </section>
+
+
+    <%- include('footer.html') %>
+    
+    
+    
+</div>
+
+</body>
+</html>

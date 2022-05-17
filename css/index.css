@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a:link,a:hover,a:active{text-decoration:none;}
+
+body {
+    border: 30px solid #FFFFFF;
+}
+.container{
+    max-width:1300px;
+    margin: 0 auto;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+
+header>.left-header {
+    display: flex;
+    margin-left: 1.5rem;
+    padding-top: 7rem;
+}
+
+header .left-header a {
+    margin-left: 1.5rem;
+    color:#333;
+}
+
+header>.middle-header{
+    display: flex;
+    flex-direction: column;
+}
+
+header>.middle-header>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; 
+    padding-top: 1.5rem;
+}
+
+header>.middle-header>ul>li>a{
+    text-decoration:none;
+    color:#333;
+}
+
+
+header .middle-header ul li span{
+    font-size: 1rem;
+}
+
+header .middle-header li a:hover { color: #333; font-weight: bold;}
+
+header .middle-header li a span{position: relative;}
+header .middle-header li a:hover span:after { content: ""; display: block; position: absolute; left: 0; bottom:-9px;  width: 100%; height: 1px; background: #333;}
+
+
+header>.right-header {
+    display:flex;
+    margin-right: 1.5rem;
+    padding-top: 7rem;
+}
+
+header .right-header a {
+    margin-right: 1.5rem;
+    color:#333;
+
+}
+
+header a{
+    transition : .5s;
+}
+
+header a:hover {
+    transition : .5s;
+  transform : translateY(-10px);
+}
+
+
+section .flexslider{
+    margin-top: 2rem;
+}
+section .main_slide_1 {
+    display: block;
+    position: relative;
+}
+
+section .main_slide_1 p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 70px;
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section .main_slide_1 span{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+section .slides li {
+    list-style-type: none;
+}
+
+section .shop_list{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+section .shop_list a{
+    text-decoration:none;
+}
+
+section .shop_list p{
+    text-align: center;
+}
+
+section .shop_list .perfume_name{
+    color : black;
+    font-size: 1.5rem;
+}
+
+section .shop_list .perfume_price{
+    color : black;
+
+    font-size:1rem;
+    font-weight: 500;
+}
+
+footer{
+    margin-top: 4rem;
+    font-size: 13px;
+    color: gray;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 1rem;
+    
+}
+
+footer ul li{
+    margin: 0 1rem;
+}
+footer ul li a{
+    color: gray;
+}
+
+@media(max-width: 1000px) {
+    header .left-header{
+        flex-direction: column;
+    }
+    header .right-header{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 500px) {
+    header .left-header{
+        display: none;
+    }
+    header .right-header{
+        display: none;
+    }
+}
